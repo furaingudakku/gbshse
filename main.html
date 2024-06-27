@@ -50,9 +50,9 @@
 <body>
 
 <div class="login-container">
-    <h2>Login</h2>
-    <input type="text" id="seat number" placeholder="Username">
-    <input type="password" id="student id" placeholder="Password">
+    <h2>enter credentials</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
     <button onclick="login()">Login</button>
     <div id="error-message" class="error"></div>
 </div>
@@ -65,7 +65,7 @@
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
 
-        if (username === '208789' && password === 'fb5705') {
+        if (username === '208789' && password === 'FB5705') {
             window.location.href = 'results.html';
         } else {
             attemptCount++;
